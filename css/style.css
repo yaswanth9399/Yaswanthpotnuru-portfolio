@@ -31,7 +31,151 @@ body {
       opacity: 0;
       animation: fadeIn 2s ease-in forwards, gradientShift 5s ease-in-out infinite;
   }
-  
+  /* Hide the button for mobile by default */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Show the second button only on mobile */
+@media screen and (max-width: 767px) {
+  .desktop-only {
+      display: none;
+  }
+  .mobile-only {
+      display: block;
+      text-align: center; /* Ensure the button is centered */
+      margin-top: 20px;
+  }
+}
+
+/* Optionally, style the buttons */
+/* Hide the button for mobile by default */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Show the second button only on mobile */
+@media screen and (max-width: 767px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+        text-align: center; /* Ensure the button is centered */
+        margin-top: 20px;
+    }
+}
+
+/* Optionally, style the buttons */
+.center-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #007bff;  /* Blue background */
+    color: white;  /* White text */
+    border-radius: 30px;  /* Rounded corners */
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.icon-download4 {
+    margin-left: 8px;
+}
+/* Hide the button for mobile by default */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Show the second button only on mobile */
+@media screen and (max-width: 767px) {
+  .desktop-only {
+      display: none;
+  }
+  .mobile-only {
+      display: block;
+      text-align: center; /* Ensure the button is centered */
+      margin-top: 0px;
+  }
+}
+
+/* Optionally, style the buttons */
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #007bff;  /* Blue background */
+  color: white;  /* White text */
+  border-radius: 30px;  /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.icon-download4 {
+  margin-left: 8px;
+}
+/* @media screen and (max-width: 767px) {
+.center-button-container {
+  display: block;
+  justify-content: center;
+  margin-top: 20px;
+}
+} */
+
+
+.btn {
+  background-color: #007bff;  /* Blue background */
+  color: white;  /* White text */
+  border-radius: 30px;  /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.icon-download4 {
+  margin-left: 8px;
+}
+
   @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
